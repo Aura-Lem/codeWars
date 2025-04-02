@@ -119,4 +119,17 @@ console.log('-------------------');
   console.log(disemvowel("This website is for losers LOL!"));
   console.log(disemvowel("No offense but,\nYour writing is among the worst I've ever read"));
   console.log(disemvowel("What are you, a communist?"));
-  
+
+  console.log('-------------------');
+
+  function removeChar(str){
+    let slicedWord = str.slice(1, -1);
+     return slicedWord;
+   };
+   
+   console.log(removeChar('eloquent'));
+   console.log(removeChar('country'));
+   console.log(removeChar('person'));
+   console.log(removeChar('place'));
+   console.log(removeChar('ab'));
+   console.log(removeChar('ooopsss'));
