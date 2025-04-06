@@ -42,3 +42,42 @@ let a = v2 , //set number value to a
     b = v6 ; //set number value to b
 return a % b;
 }
+
+
+
+function greet (name, owner) {
+    if (name === owner) {
+      return 'Hello boss'; 
+    } else {
+      return 'Hello guest';
+    }
+  }
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+      let volume = length * width * height;
+      return volume;
+    }
+  }
+
+  function stringClean(s){
+    let newText = s.replaceAll(0, '').replaceAll(1, '').replaceAll(2, '').replaceAll(3, '').replaceAll(4, '').replaceAll(5, '').replaceAll(6, '').replaceAll(7, '').replaceAll(8, '').replaceAll(9, '');
+    return newText;
+  }
+
+  function getSize(width, height, depth) {
+    let list = [];
+    let surface = 2 * (width * height + width * depth + height * depth);
+    let volume = width * height * depth;
+    list.push(surface, volume);
+    return list;
+  }
+  
+
+  function createArray(number) {
+    const newArray = [];
+    for (let counter = 1; counter <= number; counter++) {
+        newArray.push(counter);
+    }
+    return newArray;
+}
