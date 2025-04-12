@@ -41,4 +41,14 @@ function checkForFactor (base, factor) {
       return false;
     }
 }
+
+function spEng(sentence){
+    let sent = sentence.toLowerCase();
+    if (sent.includes('english')) {
+      return true;
+    } else {
+      return false;
+    }
+      
+}
   
