@@ -131,3 +131,119 @@ console.log(sum);
 
 const sum2 = marks.map((item, index, arr) => item * index * arr.length);
 console.log(sum2);
+
+// https://www.codewars.com/kata/51c8991dee245d7ddf00000e
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
+}
+
+function reverseWords(str){
+    var reverse = [];
+    var words = str.split(" ");
+    for(let i=words.length-1; i>=0; i--){
+      reverse.push(words[i]);
+      
+    }
+    return reverse.join(" ")
+}
+
+// https://www.codewars.com/kata/56676e8fabd2d1ff3000000c
+function findNeedle(haystack) {
+    for (let i = 0; i < haystack.length; i++) {
+      if (haystack[i] === 'needle') {
+        return `found the needle at position ${i}`;
+      }
+    }
+}
+
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle");
+}
+
+// https://www.codewars.com/kata/53dc23c68a0c93699800041d
+function smash (words) {
+    return words.join(' ');
+}
+  
+
+// https://www.codewars.com/kata/5963c18ecb97be020b0000a2
+function derive(coefficient,exponent) {
+    return (coefficient * exponent) + 'x^' + (exponent - 1);
+}
+
+function derive(coefficient,exponent) {
+    return `${coefficient*exponent}x^${exponent-1}`
+}
+
+// https://www.codewars.com/kata/563e320cee5dddcf77000158
+function getAverage(marks){
+    sum = 0;
+    for (i = 0; i < marks.length; i++) {
+      sum += (marks[i] / marks.length);
+    }
+    return Math.floor(sum);
+}
+
+function getAverage(marks){
+    return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+}
+
+// https://www.codewars.com/kata/527b3cd0492b6b15250060af
+items = []
+items.push({a: "b", c: "d"});
+
+
+// https://www.codewars.com/kata/572059afc2f4612825000d8a
+function howManydays(month){
+    let days;
+    switch (month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+        days = 31;
+        break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+        days = 30;
+        break;
+        case 2:
+        days = 28;
+        break;     
+    }
+    return days;
+}
+
+function howManydays(month){
+    switch (month){
+       case 2: return 28
+       case 4:
+       case 6:
+       case 9:
+       case 11: return 30
+    }
+    return 31
+}
+
+// https://www.codewars.com/kata/544675c6f971f7399a000e79
+const stringToNumber = function(str){
+    
+    return str - '';
+}
+
+var stringToNumber1 = function(str){
+    return parseInt(str);
+}
+
+var stringToNumber2 = function(str){
+    return Number(str);
+}
+
+var stringToNumber = function(str){
+    return +str;
+}
