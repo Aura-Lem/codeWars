@@ -124,7 +124,7 @@ const marks = [10, 2, 8, 4, 6];
 
 let sum = [];
 for (let i = 0; i < marks.length; i++) {
-    sum.push(marks[i] * i);                   // 10 * 0, 2 * 10, 8 * 2....
+    sum.push(marks[i] * i * marks.length);                   // 10 * 0, 2 * 10, 8 * 2....
 }
 
 console.log(sum);
